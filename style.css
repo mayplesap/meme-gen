@@ -1,0 +1,84 @@
+h1, h5 {
+    text-align: center;
+}
+
+section {
+    background-color: rgb(226, 226, 226);
+    padding-bottom: 1.5em;
+}
+
+.row {
+    padding: .2em;
+}
+
+.button {
+    text-align: center;
+    padding-top: .5em;
+}
+
+#memeContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1.5em;
+}
+
+.completeMeme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 50%;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+}
+
+#memeContent .memePic {
+    padding: 1em;
+    border-radius: 30px;
+}
+
+.topText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+}
+
+.botText {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80%;
+}
+
+.remove {
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    width: 85%;
+    height: 85%;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    opacity: 75%;
+    font-size: 4em;
+    display: none;
+}
+
+.completeMeme:hover .remove {
+    display: block;
+    background-color: rgba(37, 37, 37, 0.1);
+    background-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 768px) {
+    .completeMeme {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

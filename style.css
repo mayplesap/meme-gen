@@ -77,13 +77,16 @@ section {
     background-blend-mode: multiply;
 }
 
-@media only screen and (max-width: 750px) {
-    .completeMeme {
-        width: 90%;
-        margin-left: 1%;
-        margin-right: 1%;
-        font-size: 1em;
+@media screen and (max-width: 900px) {
+    #memeContent {
+        margin: 0;
         padding: 0;
     }
-    
+    .completeMeme {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1em;
+        padding: 0;
+    }   
 }

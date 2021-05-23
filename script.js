@@ -25,13 +25,12 @@ function add(picture, topTxt, botTxt)
         botText.className = "botText";
         botText.innerHTML = botTxt;
 
-    let removeButton = document.createElement("button");
-        removeButton.className = "remove";
-        removeButton.innerHTML = "X";
-        removeButton.addEventListener("click", function(event){
-            event.target.parentNode.remove();
-        })
-
+        let removeButton = document.createElement("div");
+            removeButton.className = "remove";
+            removeButton.innerHTML = "X";
+            removeButton.addEventListener("click", function(event){
+                event.target.parentNode.remove();
+            })
 
     memeDiv.append(img);
     memeDiv.append(topText);
@@ -40,13 +39,3 @@ function add(picture, topTxt, botTxt)
 
     return memeDiv;
 }
-
-
-/*
-    let removeButton = document.createElement("button");
-    removeButton.innterText = "X";
-
-    memeDiv.append(img);
-    memeDiv.append(topText);
-
-*/
